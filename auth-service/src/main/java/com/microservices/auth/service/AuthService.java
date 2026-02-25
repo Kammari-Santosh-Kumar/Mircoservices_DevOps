@@ -20,7 +20,7 @@ public class AuthService {
         this.encoder = encoder;
         this.jwtUtil = jwtUtil;
     }
-
+// Registration method
     public User register(User user) {
         user.setPassword(encoder.encode(user.getPassword()));
         return repo.save(user);

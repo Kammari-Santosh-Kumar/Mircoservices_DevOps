@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: microservices-spr-product-service:latest
-          imagePullPolicy: Never
+          image: santoshkammari/product-service:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5002
           env:

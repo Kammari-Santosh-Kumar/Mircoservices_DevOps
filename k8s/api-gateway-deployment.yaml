@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: microservices-spr-api-gateway:latest
-          imagePullPolicy: Never
+          image: santoshkammari/api-gateway:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000

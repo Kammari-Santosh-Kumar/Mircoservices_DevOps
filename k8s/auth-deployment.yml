@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: microservices-spr-auth-service:latest
-          imagePullPolicy: Never
+          image: santoshkammari/auth-service:1.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 5001
           env:
