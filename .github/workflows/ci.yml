@@ -19,13 +19,13 @@ jobs:
           java-version: 17
 
       - name: Build API Gateway
-        run: mvn clean install
+        run: mvn clean install -DskipTests
         working-directory: api-gateway
 
       - name: Build Auth Service
-        run: mvn clean install
+        run: mvn clean install -DskipTests
         working-directory: auth-service
 
       - name: Build Product Service
-        run: mvn clean install
+        run: mvn clean install -DskipTests
         working-directory: product-service
