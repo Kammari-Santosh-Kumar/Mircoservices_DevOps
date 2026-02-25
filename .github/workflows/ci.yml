@@ -18,8 +18,14 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build Project
+      - name: Build API Gateway
         run: mvn clean install
+        working-directory: api-gateway
 
-      - name: Build Docker Image
-        run: docker build -t microservices-app .
+      - name: Build Auth Service
+        run: mvn clean install
+        working-directory: auth-service
+
+      - name: Build Product Service
+        run: mvn clean install
+        working-directory: product-service
